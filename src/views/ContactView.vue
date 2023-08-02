@@ -1,7 +1,7 @@
 <template>
   <section class="contact-section" id="contact">
     <div class="container">
-      <h2 class="section-heading">_ Contact</h2>
+      <h2 class="section-heading">Contact</h2>
       <div class="contact-wrapper">
         <div class="contact-wrapper-column">
           <ContactSet />

@@ -1,13 +1,12 @@
 <template>
   <section class="home-section" id="home" v-motion-fade>
     <div class="container">
-      <h2 class="section-heading">_ Hello</h2>
+      <h2 class="section-heading">Hello</h2>
       <IntroAnimation />
       <p class="section-text">
-        My name is {{ heroName }}, I'm a Full-stack Developer based in {{ heroFrom }}. <br>
-        I am working on web interfaces that should be good looking, simple and enjoyable to use.<br>
-        If you are interested in cooperation and transforming your ideas into a great projects, please contact me in any
-        way convenient for you.
+        My name is {{ heroName }}, I'm a {{heroActivity}} based in {{ heroFrom }}. <br>
+        {{heroMemo01}}<br>
+        {{heroMemo02}}
       </p>
     </div>
   </section>
@@ -24,7 +23,10 @@ export default {
   data() {
     return {
       heroName: process.env.VUE_APP_HERO_NAME,
+      heroActivity: process.env.VUE_APP_HERO_ACTIVITY,
       heroFrom: process.env.VUE_APP_HERO_FROM,
+      heroMemo01: process.env.VUE_APP_HERO_MEMO_01,
+      heroMemo02: process.env.VUE_APP_HERO_MEMO_02
     };
   }
 }

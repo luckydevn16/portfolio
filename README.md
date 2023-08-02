@@ -6,7 +6,7 @@ Portfolio implemented as a Single Page Application made with Vue JS.
 
 The UI was also designed by myself.
 
-[Demo](https://redhatdev16.github.io/portfolio/)
+[Demo](https://luckydevn16.github.io/portfolio/)
 
 ## Project setup
 ```

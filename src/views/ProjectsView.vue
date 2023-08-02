@@ -1,7 +1,7 @@
 <template>
   <section class="projects-section" id="projects">
     <div class="container">
-      <h2 class="section-heading delay-2">_ Projects</h2>
+      <h2 class="section-heading delay-2">Projects</h2>
       <MySelect :options="options" :selectedOption="selectedOption" @selectOption="selectOption"
         @sortByCategories="sortByCategories" />
       <div class="projects-wrapper">
@@ -59,7 +59,7 @@ export default {
         {
           name: 'Quiz App',
           description: 'Web App created with Vue JS',
-          link: 'https://redhatdev16.github.io/quiz-app/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/quiz-app/`,
           projectImage: 'quiz-app.png',
           projectMobileImage: 'quiz-app-mob.png',
           color: 'color:var(--vue-color)',
@@ -83,7 +83,7 @@ export default {
         {
           name: 'MovieApp',
           description: 'SPA created with Vue JS, REST API, Nuxt JS',
-          link: 'https://redhatdev16.github.io/movie-app/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/movie-app/`,
           projectImage: 'movie-app.jpg',
           projectMobileImage: 'movie-app-mob.jpg',
           color: 'color:var(--vue-color)',
@@ -115,7 +115,7 @@ export default {
         {
           name: 'CryptoView',
           description: 'SPA created with Vue JS, REST API, Quasar UI',
-          link: 'https://redhatdev16.github.io/cryptoview/#/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/cryptoview/#/`,
           projectImage: 'cryptoview.jpg',
           projectMobileImage: 'cryptoview-mob.jpg',
           color: 'color:var(--vue-color)',
@@ -147,7 +147,7 @@ export default {
         {
           name: 'Covid Tracker',
           description: 'Web App created with Vue JS, REST API',
-          link: 'https://redhatdev16.github.io/vue-covid-tracker/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/vue-covid-tracker/`,
           projectImage: 'covid-tracker.jpg',
           projectMobileImage: 'covid-tracker-mob.jpg',
           color: 'color:var(--vue-color)',
@@ -175,7 +175,7 @@ export default {
         {
           name: 'Colors Constructor',
           description: 'Web App created with Vue JS',
-          link: 'https://redhatdev16.github.io/colors-constructor/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/colors-constructor/`,
           projectImage: 'colors.jpg',
           projectMobileImage: 'colors-mob.jpg',
           color: 'color:var(--vue-color)',
@@ -199,7 +199,7 @@ export default {
         {
           name: 'Task List',
           description: 'Web App created with Vue JS, LocalStorage',
-          link: 'https://redhatdev16.github.io/vue-task-list/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/vue-task-list/`,
           projectImage: 'task-list.jpg',
           projectMobileImage: 'task-list-mob.jpg',
           color: 'color:var(--vue-color)',
@@ -223,7 +223,7 @@ export default {
         {
           name: 'This Portfolio',
           description: 'SPA created with Vue JS',
-          link: `https://redhatdev16.github.io/${process.env.VUE_APP_REPOSITORY}/`,
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/${process.env.VUE_APP_REPOSITORY}/`,
           projectImage: 'portfolio.jpg',
           projectMobileImage: 'portfolio-mob.jpg',
           color: 'color:var(--vue-color)',
@@ -247,7 +247,7 @@ export default {
         {
           name: 'Exercises App',
           description: 'SPA created with React, REST API',
-          link: 'https://redhatdev16.github.io/exer-app/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/exer-app/`,
           projectImage: 'exer-app.jpg',
           projectMobileImage: 'exer-app-mob.jpg',
           color: 'color:var(--react-color)',
@@ -275,7 +275,7 @@ export default {
         {
           name: 'Rick-and-Morty Pedia',
           description: 'SPA created with React, Bootstrap, REST API',
-          link: 'https://redhatdev16.github.io/rimpedia/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/rimpedia/`,
           projectImage: 'rimpedia.jpg',
           projectMobileImage: 'rimpedia-mob.jpg',
           color: 'color:var(--react-color)',
@@ -307,7 +307,7 @@ export default {
         {
           name: 'Instant Weather App',
           description: 'Web App created with React, REST API',
-          link: 'https://redhatdev16.github.io/react-weather-app/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/react-weather-app/`,
           projectImage: 'react-weather-app.jpg',
           projectMobileImage: 'react-weather-app-mob.jpg',
           color: 'color:var(--react-color)',
@@ -335,7 +335,7 @@ export default {
         {
           name: 'Simple Calculator',
           description: 'Web App created with React',
-          link: 'https://redhatdev16.github.io/react-simple-calculator/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/react-simple-calculator/`,
           projectImage: 'calculator.jpg',
           projectMobileImage: 'calculator-mob.jpg',
           color: 'color:var(--react-color)',
@@ -359,7 +359,7 @@ export default {
         {
           name: 'MySnippets',
           description: 'Web App created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/snippets/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/snippets/`,
           projectImage: 'snippets.jpg',
           projectMobileImage: 'snippets-mob.jpg',
           color: 'color:var(--js-color)',
@@ -383,7 +383,7 @@ export default {
         {
           name: 'Meal Match',
           description: 'Web Game created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/meal-match/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/meal-match/`,
           projectImage: 'meal-match.jpg',
           projectMobileImage: 'meal-match-mob.jpg',
           color: 'color:var(--js-color)',
@@ -407,7 +407,7 @@ export default {
         {
           name: 'CookApp',
           description: 'Web App created with HTML, CSS, Javascript, LocalStorage, REST API',
-          link: 'https://redhatdev16.github.io/cook-app/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/cook-app/`,
           projectImage: 'cook-app.jpg',
           projectMobileImage: 'cook-app-mob.jpg',
           color: 'color:var(--js-color)',
@@ -435,7 +435,7 @@ export default {
         {
           name: 'Password Generator',
           description: 'Web App created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/passw/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/passw/`,
           projectImage: 'passw-generator.jpg',
           projectMobileImage: 'passw-generator-mob.jpg',
           color: 'color:var(--js-color)',
@@ -459,7 +459,7 @@ export default {
         {
           name: 'Quick Currency Converter',
           description: 'Web App created with Javascript, REST API',
-          link: 'https://redhatdev16.github.io/quick-currency-converter/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/quick-currency-converter/`,
           projectImage: 'quick-currency-converter.jpg',
           projectMobileImage: 'quick-currency-converter-mob.jpg',
           color: 'color:var(--js-color)',
@@ -487,7 +487,7 @@ export default {
         {
           name: 'Panda Tetris',
           description: 'Web Game created with Javascript',
-          link: 'https://redhatdev16.github.io/JS-Tetris/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/JS-Tetris/`,
           projectImage: 'tetris.jpg',
           projectMobileImage: 'tetris-mob.jpg',
           color: 'color:var(--js-color)',
@@ -511,7 +511,7 @@ export default {
         {
           name: 'BrokerNear',
           description: 'Multipage Website created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/brokernear/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/brokernear/`,
           projectImage: 'brokernear.png',
           projectMobileImage: 'brokernear-mob.png',
           color: 'color:var(--layout-color)',
@@ -535,7 +535,7 @@ export default {
         {
           name: 'Cencosud',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/cencosud/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/cencosud/`,
           projectImage: 'cencosud.jpg',
           projectMobileImage: 'cencosud-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -559,7 +559,7 @@ export default {
         {
           name: 'Equinor',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/equinor/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/equinor/`,
           projectImage: 'equinor.jpg',
           projectMobileImage: 'equinor-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -583,7 +583,7 @@ export default {
         {
           name: 'Intel AI',
           description: 'Web Page created with HTML, CSS, Javascript, Splide JS',
-          link: 'https://redhatdev16.github.io/intel-ai/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/intel-ai/`,
           projectImage: 'intel-ai.jpg',
           projectMobileImage: 'intel-ai-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -611,7 +611,7 @@ export default {
         {
           name: 'Bitcoin Gold',
           description: 'Web Page created with HTML, CSS, Javascript, Splide JS',
-          link: 'https://redhatdev16.github.io/bitcoin-gold/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/bitcoin-gold/`,
           projectImage: 'bitcoin-gold.jpg',
           projectMobileImage: 'bitcoin-gold-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -639,7 +639,7 @@ export default {
         {
           name: 'Softpoint',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/softpoint/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/softpoint/`,
           projectImage: 'softpoint.jpg',
           projectMobileImage: 'softpoint-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -663,7 +663,7 @@ export default {
         {
           name: 'NFT Holders',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/nft-holders/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/nft-holders/`,
           projectImage: 'nft-holders.png',
           projectMobileImage: 'nft-holders-mob.png',
           color: 'color:var(--layout-color)',
@@ -687,7 +687,7 @@ export default {
         {
           name: 'Smartminds',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/smartminds/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/smartminds/`,
           projectImage: 'smartminds.jpg',
           projectMobileImage: 'smartminds-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -711,7 +711,7 @@ export default {
         {
           name: 'Sistema Cuantico',
           description: 'Web Page created with HTML, CSS, Javascript, JQuery',
-          link: 'https://redhatdev16.github.io/sistema-cuantico/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/sistema-cuantico/`,
           projectImage: 'sistema-cuantico.jpg',
           projectMobileImage: 'sistema-cuantico-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -739,7 +739,7 @@ export default {
         {
           name: 'Metodo Italiano',
           description: 'Web Page created with HTML, CSS, Javascript, JQuery',
-          link: 'https://redhatdev16.github.io/metodo-italiano/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/metodo-italiano/`,
           projectImage: 'metodo-italiano.jpg',
           projectMobileImage: 'metodo-italiano-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -767,7 +767,7 @@ export default {
         {
           name: 'Taster',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/taster/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/taster/`,
           projectImage: 'taster.jpg',
           projectMobileImage: 'taster-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -791,7 +791,7 @@ export default {
         {
           name: 'Techalytic',
           description: 'Web Page created with HTML, CSS, Javascript, JQuery',
-          link: 'https://redhatdev16.github.io/techalytic/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/techalytic/`,
           projectImage: 'techalytic.jpg',
           projectMobileImage: 'techalytic-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -819,7 +819,7 @@ export default {
         {
           name: 'Pattern',
           description: 'Web Page created with HTML, CSS, Javascript',
-          link: 'https://redhatdev16.github.io/pattern/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/pattern/`,
           projectImage: 'pattern.jpg',
           projectMobileImage: 'pattern-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -843,7 +843,7 @@ export default {
         {
           name: 'Marketing Agency',
           description: 'Multipage Website based on template made with HTML, CSS, JQuery',
-          link: 'https://redhatdev16.github.io/marketing-agency/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/marketing-agency/`,
           projectImage: 'marketing-agency.jpg',
           projectMobileImage: 'marketing-agency-mob.jpg',
           color: 'color:var(--layout-color)',
@@ -891,7 +891,7 @@ export default {
         {
           name: 'Thank You',
           description: 'Web Page created with HTML, CSS, Javascript, LocalStorage',
-          link: 'https://redhatdev16.github.io/thankyou/',
+          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/thankyou/`,
           projectImage: 'thankyou.jpg',
           projectMobileImage: 'thankyou-mob.jpg',
           color: 'color:var(--layout-color)',

@@ -6,7 +6,7 @@
                 {{ heroName }}
             </h3>
             <h5 class="navbar-intro-position">
-                Full-stack Developer
+                {{ heroActivity }}
             </h5>
         </div>
         <div id="nav" class="nav-menu">
@@ -32,6 +32,7 @@ export default {
     data() {
         return {
             heroName: process.env.VUE_APP_HERO_NAME,
+            heroActivity: process.env.VUE_APP_HERO_ACTIVITY,
             navlinks: [
                 {
                     name: 'Home',
@@ -249,4 +250,5 @@ export default {
     .navbar {
         display: none
     }
-}</style>
+}
+</style>

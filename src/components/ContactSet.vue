@@ -17,25 +17,25 @@ export default {
           name: 'location',
           text: process.env.VUE_APP_HERO_FROM,
           img: 'location.png',
-          link: 'https://www.google.com/maps/place/Helsinki,+Finland/@60.172169,24.9367139,13z/data=!4m15!1m8!3m7!1s0x46920bc796210691:0xcd4ebd843be2f763!2sHelsinki,+Finland!3b1!8m2!3d60.1698557!4d24.9383791!16zL20vMDNraG4!3m5!1s0x46920bc796210691:0xcd4ebd843be2f763!8m2!3d60.1698557!4d24.9383791!16zL20vMDNraG4?entry=ttu'
+          link: process.env.VUE_APP_HERO_FROM_GOOGLE_MAP
         },
         {
           name: 'skype',
-          text: '@redhat',
+          text: process.env.VUE_APP_HERO_SKYPE_NAME,
           img: 'skype.png',
-          link: 'https://join.skype.com/invite/p1Do4ImEmtP0'
+          link: process.env.VUE_APP_HERO_SKYPE_INVITE
         },
         {
           name: 'email',
-          text: 'redhatdev16@gmail.com',
+          text: process.env.VUE_APP_HERO_EMAIL,
           img: 'email.png',
-          link: 'mailto:redhatdev16@gmail.com'
+          link: `mailto:${process.env.VUE_APP_HERO_EMAIL}`
         },
         {
           name: 'github',
-          text: 'github.com/redhatdev16',
+          text: `github.com/${process.env.VUE_APP_HERO_GITHUB}`,
           img: 'github.png',
-          link: 'https://github.com/redhatdev16'
+          link: `https://github.com/${process.env.VUE_APP_HERO_GITHUB}`
         },
       ]
     }

@@ -1,13 +1,20 @@
 <template>
   <section class="about-section" id="about">
     <div class="container">
-      <h2 class="section-heading">_ About</h2>
+      <h2 class="section-heading">About</h2>
       <p class="section-text">
-        <strong>Field of activity:</strong> Full-stack Developer, Layout engineer
+        <strong>Field of activity:</strong> {{heroActivity}}
       </p>
       <p class="section-text">
-        <strong>Educated at:</strong> <a href="https://www.tuni.fi/" target="_blank">Tampere University of Technology - Finland</a> (2007 - 2012) <br>
-        <strong>Specialty:</strong> Master of Science in Engineering Degree in Information Technology
+        <strong>Educated at:</strong><br/>
+        <a v-if="!!heroEducatedName01" :href="heroEducatedSite01" target="_blank" style="padding-left: 16px;">{{heroEducatedName01}}</a><br>
+        <a v-if="!!heroEducatedName02" :href="heroEducatedSite02" target="_blank" style="padding-left: 16px;">{{heroEducatedName02}}</a><br>
+        <a v-if="!!heroEducatedName03" :href="heroEducatedSite03" target="_blank" style="padding-left: 16px;">{{heroEducatedName03}}</a><br>
+        
+        <strong>Specialty:</strong><br/>
+        <span v-if="!!heroSpecialty01" style="padding-left: 16px;">{{heroSpecialty01}}</span><br/>
+        <span v-if="!!heroSpecialty02" style="padding-left: 16px;">{{heroSpecialty02}}</span><br/>
+        <span v-if="!!heroSpecialty03" style="padding-left: 16px;">{{heroSpecialty03}}</span><br/>
       </p>
       <div class="section-text">
         <strong>The basic technologies I use:</strong> <br>
@@ -33,7 +40,7 @@
         </div>
       </div>
       <p class="section-text">
-        Besides web development, I like to chat about music, cinema and sports.
+        Besides software development, I like to chat about music, cinema and sports.
       </p>
       <p class="section-text">
         I also sometimes compose my own beats. Here's some of my latest: <br>
@@ -57,6 +64,17 @@ export default {
   },
   data() {
     return {
+      heroActivity: process.env.VUE_APP_HERO_ACTIVITY,
+      heroEducatedName01: process.env.VUE_APP_HERO_EDUCATED_NAME_01,
+      heroEducatedName02: process.env.VUE_APP_HERO_EDUCATED_NAME_02,
+      heroEducatedName03: process.env.VUE_APP_HERO_EDUCATED_NAME_03,
+      heroEducatedSite01: process.env.VUE_APP_HERO_EDUCATED_SITE_01,
+      heroEducatedSite02: process.env.VUE_APP_HERO_EDUCATED_SITE_02,
+      heroEducatedSite03: process.env.VUE_APP_HERO_EDUCATED_SITE_03,
+      heroSpecialty01: process.env.VUE_APP_HERO_SPECIALTY_01,
+      heroSpecialty02: process.env.VUE_APP_HERO_SPECIALTY_02,
+      heroSpecialty03: process.env.VUE_APP_HERO_SPECIALTY_03,
+
       technologies: [
         {
           name: 'HTML5',
