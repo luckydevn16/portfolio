@@ -113,38 +113,6 @@ export default {
           ]
         },
         {
-          name: 'CryptoView',
-          description: 'SPA created with Vue JS, REST API, Quasar UI',
-          link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/cryptoview/#/`,
-          projectImage: 'cryptoview.jpg',
-          projectMobileImage: 'cryptoview-mob.jpg',
-          color: 'color:var(--vue-color)',
-          category: 'vue',
-          technologyImg: 'vue.png',
-          techUsed: [
-            {
-              name: 'vue',
-              icon: 'vue.png'
-            },
-            {
-              name: 'quasar',
-              icon: 'quasar.png'
-            },
-            {
-              name: 'rest',
-              icon: 'rest.png'
-            },
-            {
-              name: 'html',
-              icon: 'html-5.png'
-            },
-            {
-              name: 'css',
-              icon: 'css.png'
-            },
-          ]
-        },
-        {
           name: 'Covid Tracker',
           description: 'Web App created with Vue JS, REST API',
           link: `https://${process.env.VUE_APP_HERO_GITHUB}.github.io/vue-covid-tracker/`,
