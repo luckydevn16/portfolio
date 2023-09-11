@@ -85,7 +85,7 @@ export default {
     height: 19rem;
     padding: 1rem;
     background-color: #cfdbf9;
-    background-image: url(../assets/img/Noise.png), radial-gradient(circle farthest-corner at 100% 0%, #348F50, #56b4d3);
+    background-image: url(../assets/img/Noise.png), radial-gradient(circle farthest-corner at 100% 0%, #1fa2ff, #12d8fa);
     background-position: 0px 0px, 0px 0px;
     background-size: 400px, auto;
     background-repeat: repeat, repeat;
