@@ -14,12 +14,6 @@ export default {
     return {
       contacts: [
         {
-          name: 'location',
-          text: process.env.VUE_APP_HERO_FROM,
-          img: 'location.png',
-          link: process.env.VUE_APP_HERO_FROM_GOOGLE_MAP
-        },
-        {
           name: 'skype',
           text: process.env.VUE_APP_HERO_SKYPE_NAME,
           img: 'skype.png',
@@ -37,6 +31,12 @@ export default {
           img: 'github.png',
           link: `https://github.com/${process.env.VUE_APP_HERO_GITHUB}`
         },
+        {
+          name: 'telegram',
+          text: process.env.VUE_APP_HERO_TELEGRAM_NAME,
+          img: 'telegram.png',
+          link: process.env.VUE_APP_HERO_TELEGRAM_LINK
+        }        
       ]
     }
   }

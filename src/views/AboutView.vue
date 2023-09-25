@@ -6,10 +6,10 @@
         <strong>Field of activity:</strong> {{heroActivity}}
       </p>
       <p class="section-text">
-        <strong>Educated at:</strong><br/>
+        <!-- <strong>Educated at:</strong><br/>
         <a v-if="!!heroEducatedName01" :href="heroEducatedSite01" target="_blank" style="padding-left: 16px;">{{heroEducatedName01}}</a><br>
         <a v-if="!!heroEducatedName02" :href="heroEducatedSite02" target="_blank" style="padding-left: 16px;">{{heroEducatedName02}}</a><br>
-        <a v-if="!!heroEducatedName03" :href="heroEducatedSite03" target="_blank" style="padding-left: 16px;">{{heroEducatedName03}}</a><br>
+        <a v-if="!!heroEducatedName03" :href="heroEducatedSite03" target="_blank" style="padding-left: 16px;">{{heroEducatedName03}}</a><br> -->
         
         <strong>Specialty:</strong><br/>
         <span v-if="!!heroSpecialty01" style="padding-left: 16px;">{{heroSpecialty01}}</span><br/>
